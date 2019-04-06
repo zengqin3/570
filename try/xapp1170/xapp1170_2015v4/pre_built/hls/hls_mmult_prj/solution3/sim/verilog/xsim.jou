@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 22 16:23:50 2019
+# Process ID: 29096
+# Current directory: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/standalone_mmult/xsim_script.tcl}
+# Log file: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog/xsim.log
+# Journal file: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/standalone_mmult/xsim_script.tcl
+source standalone_mmult.tcl

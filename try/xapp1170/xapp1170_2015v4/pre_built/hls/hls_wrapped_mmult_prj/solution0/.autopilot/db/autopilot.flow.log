@@ -1,0 +1,1660 @@
+INFO: [HLS 200-0] Workspace C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0 opened at Fri Feb 22 16:24:15 -0500 2019
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Command       config_clock returned 0; 0.001 sec.
+Execute       open_platform DefaultPlatform 
+Command       open_platform returned 0; 0 sec.
+Execute       import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.lib 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.lib 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.lib 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.lib 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.lib 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.008 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_old.lib 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_vivado.lib 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.006 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command         ap_source returned 0; 0 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed medium 
+Command         config_chip_info returned 0; 0 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.007 sec.
+Command       import_lib returned 0; 0.032 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.008 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.091 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.135 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.138 sec.
+Command       ap_source returned 0; 0.138 sec.
+Execute       open_platform DefaultPlatform 
+Command       open_platform returned 0; 0 sec.
+Execute       import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.005 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command             ap_source returned 0; 0.028 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command             ap_source returned 0; 0.002 sec.
+Command           ap_source returned 0; 0.033 sec.
+Command         ap_source returned 0; 0.033 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command         ap_source returned 0; 0.003 sec.
+Command       import_lib returned 0; 0.053 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       set_part xc7z010clg400-1 
+Execute         add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
+Execute           get_default_platform 
+Command           get_default_platform returned 0; 0 sec.
+Execute           license_isbetapart xc7z010 
+Command           license_isbetapart returned 1; 0 sec.
+Execute           open_platform DefaultPlatform 
+Command           open_platform returned 0; 0 sec.
+Execute           import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.lib 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.lib 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.lib 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.lib 
+Command                 ap_source returned 0; 0.001 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.lib 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.lib 
+Command                 ap_source returned 0; 0 sec.
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.lib 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0.006 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_old.lib 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_vivado.lib 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command               ap_source returned 0; 0.003 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command                 ap_source returned 0; 0 sec.
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command               ap_source returned 0; 0.002 sec.
+Command             ap_source returned 0; 0.007 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command             ap_source returned 0; 0.001 sec.
+Execute             get_default_platform 
+Command             get_default_platform returned 0; 0 sec.
+Execute             config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command             config_chip_info returned 0; 0 sec.
+Execute             config_chip_info -quiet -speed medium 
+Command             config_chip_info returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command                 ap_source returned 0; 0.001 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command                 ap_source returned 0; 0 sec.
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.005 sec.
+Command           import_lib returned 0; 0.027 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command                 ap_source returned 0; 0.002 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command                 ap_source returned 0; 0.003 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                   source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command                   ap_source returned 0; 0.004 sec.
+Execute                   source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command                   ap_source returned 0; 0.007 sec.
+Command                 ap_source returned 0; 0.011 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command                 ap_source returned 0; 0.011 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command                 ap_source returned 0; 0.009 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command                 ap_source returned 0; 0.003 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command                 ap_source returned 0; 0.001 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command                 ap_source returned 0; 0.101 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command                 ap_source returned 0; 0.001 sec.
+Command               ap_source returned 0; 0.143 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0.148 sec.
+Command           ap_source returned 0; 0.148 sec.
+Execute           get_default_platform 
+Command           get_default_platform returned 0; 0 sec.
+Execute           config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Command           config_chip_info returned 0; 0 sec.
+Execute           config_chip_info -quiet -speed slow 
+Command           config_chip_info returned 0; 0 sec.
+Command         add_library returned 0; 0.18 sec.
+Execute         add_library xilinx/zynq/zynq_fpv6 
+Execute           get_default_platform 
+Command           get_default_platform returned 0; 0 sec.
+Execute           open_platform DefaultPlatform 
+Command           open_platform returned 0; 0 sec.
+Execute           import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.006 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command                 ap_source returned 0; 0.028 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                   source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command                   ap_source returned 0; 0 sec.
+Execute                   source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command                   ap_source returned 0; 0 sec.
+Command                 ap_source returned 0; 0.001 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command                 ap_source returned 0; 0.002 sec.
+Command               ap_source returned 0; 0.031 sec.
+Command             ap_source returned 0; 0.033 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command             ap_source returned 0; 0.003 sec.
+Command           import_lib returned 0; 0.053 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command             ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0.003 sec.
+Command         add_library returned 0; 0.06 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Command       set_part returned 0; 0.279 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed slow 
+Command       config_chip_info returned 0; 0 sec.
+Command     open_solution returned 0; 0.564 sec.
+Execute     set_part xc7z010clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         license_isbetapart xc7z010 
+Command         license_isbetapart returned 1; 0 sec.
+Execute         open_platform DefaultPlatform 
+Command         open_platform returned 0; 0 sec.
+Execute         import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.lib 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.lib 
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.lib 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.lib 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.lib 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.lib 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.005 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_old.lib 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_vivado.lib 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.008 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/dsp48e1.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           get_default_platform 
+Command           get_default_platform returned 0; 0 sec.
+Execute           config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Command           config_chip_info returned 0; 0 sec.
+Execute           config_chip_info -quiet -speed medium 
+Command           config_chip_info returned 0; 0 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.004 sec.
+Command         import_lib returned 0; 0.026 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command                 ap_source returned 0; 0.004 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command                 ap_source returned 0; 0.008 sec.
+Command               ap_source returned 0; 0.013 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command               ap_source returned 0; 0.011 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command               ap_source returned 0; 0.008 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command               ap_source returned 0; 0.095 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command               ap_source returned 0; 0 sec.
+Command             ap_source returned 0; 0.136 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.139 sec.
+Command         ap_source returned 0; 0.139 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed slow 
+Command         config_chip_info returned 0; 0 sec.
+Command       add_library returned 0; 0.169 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         open_platform DefaultPlatform 
+Command         open_platform returned 0; 0 sec.
+Execute         import_lib C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_hp.lib 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.004 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/target_info.tcl 
+Command               ap_source returned 0; 0.026 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.hlp 
+Command                 ap_source returned 0; 0 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.hlp 
+Command                 ap_source returned 0; 0 sec.
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.hlp 
+Command               ap_source returned 0; 0.002 sec.
+Command             ap_source returned 0; 0.031 sec.
+Command           ap_source returned 0; 0.033 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_hp.hlp 
+Command           ap_source returned 0; 0.002 sec.
+Command         import_lib returned 0; 0.05 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.003 sec.
+Command       add_library returned 0; 0.057 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Command     set_part returned 0; 0.272 sec.
+Execute     create_clock -period 10 -name default 
+Command     create_clock returned 0; 0.002 sec.
+Execute     set_directive_inline mmult_hw 
+INFO: [HLS 200-0] Setting directive 'INLINE' 
+Command     set_directive_inline returned 0; 0.007 sec.
+Execute     set_directive_pipeline -II 1 mmult_hw/L2 
+INFO: [HLS 200-0] Setting directive 'INLINE' 
+INFO: [HLS 200-0] Setting directive 'PIPELINE' II=1 
+Command     set_directive_pipeline returned 0; 0.007 sec.
+Execute     csim_design -clean 
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       source csim/.lst_opt.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/mmult_test.cpp 
+Command       is_encrypted returned 0; 0 sec.
+Execute       is_xip C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/mmult_test.cpp 
+Command       is_xip returned 0; 0.001 sec.
+Execute       is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/mmult_accel.cpp 
+Command       is_encrypted returned 0; 0 sec.
+Execute       is_xip C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/mmult_accel.cpp 
+Command       is_xip returned 0; 0 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       source run_sim.tcl 
+Command       ap_source returned 0; 0.285 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design returned 0; 4.653 sec.
+Execute     csynth_design 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -VP9_rom_infer_simplify=0 -ng=0 -g=0 -opt_fp=0 -enable_clang39=0 
+INFO: [HLS 200-10] Analyzing design file 'mmult_accel.cpp' ...
+INFO: [HLS 200-0] Compiling one TU...
+Execute         is_m_axi_addr64 
+Command         is_m_axi_addr64 returned 0; 0 sec.
+INFO: [HLS 200-0] Handling mmult_accel.cpp as C++
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         is_encrypted mmult_accel.cpp 
+Command         is_encrypted returned 0; 0.001 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+INFO: [HLS 200-0] Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "C:/software/vivado_2017.4/Vivado/2017.4/msys" -hls  -fno-exceptions  -D__llvm__  -E "mmult_accel.cpp"   -DDB_DEBUG  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot" -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/software/vivado_2017.4/Vivado/2017.4/msys -hls -fno-exceptions -D__llvm__ -E mmult_accel.cpp -DDB_DEBUG -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp
+Command         clang returned 0; 0.686 sec.
+INFO: [HLS 200-0] Syntax Checking before pre-processing...
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "C:/software/vivado_2017.4/Vivado/2017.4/msys" -hls  -DDB_DEBUG  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot" -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp"  -o "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/useless.bc"  
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/software/vivado_2017.4/Vivado/2017.4/msys -hls -DDB_DEBUG -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/useless.bc
+Command         clang returned 0; 0.97 sec.
+INFO: [HLS 200-0] GCC PP time: 1 seconds per iteration
+INFO: [HLS 200-0] Setting directive 'INLINE' 
+INFO: [HLS 200-0] Setting directive 'PIPELINE' II=1 
+Execute         list_core -type functional_unit 
+Command         list_core returned 0; 0 sec.
+INFO: [HLS 200-0] CDT Preprocessing...
+INFO: [HLS 200-0] Marker-Pragma convertor: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp.ap-line.cpp C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp.ap-line.cpp.CXX 1
+INFO: [HLS 200-0] Converting Markers to Pragmas...
+Execute         cdt  "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp.ap-line.cpp"  -m "HLS_accel" -o "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp.ap-cdt.cpp" --pp --directive C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/solution0.directive --source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/mmult_accel.cpp --error C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Double_Pump_Mac16 DSP_Double_Pump_Mac8 DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db --ca --es --gf --pd --p2d C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db --sd --scff C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/.systemc_flag --ad 
+Command         cdt returned 0; 6.668 sec.
+INFO: [HLS 200-0] Marker-Pragma convertor: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pp.0.cpp.ap-cdt.cpp C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.0.cpp C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.0.cpp.ap-line.CXX 0
+INFO: [HLS 200-0] Converting Pragmas to Markers...
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/pragma.status.tcl 
+Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-0] Pragma Handling...
+INFO: [HLS 200-0] Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "C:/software/vivado_2017.4/Vivado/2017.4/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.1.cpp"   -DDB_DEBUG  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot" -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.2.cpp" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/software/vivado_2017.4/Vivado/2017.4/msys -hls -fno-exceptions -D__llvm__ -E C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.1.cpp -DDB_DEBUG -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.2.cpp
+Command         clang returned 0; 0.621 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+INFO: [HLS 200-0] Processing labels
+Execute         clang  -fno-limit-debug-info -gcc-toolchain C:/software/vivado_2017.4/Vivado/2017.4/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.2.cpp"  -DDB_DEBUG  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot" -I "C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.g.bc" 
+INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/software/vivado_2017.4/Vivado/2017.4/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.pragma.2.cpp -DDB_DEBUG -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot -I C:/software/vivado_2017.4/Vivado/2017.4/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.g.bc
+Command         clang returned 0; 1.01 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/ve_warning.tcl 
+Command         ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-10] Validating synthesis directives ...
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/pragma.status.tcl 
+Command         ap_source returned 0; 0.002 sec.
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:23 ; elapsed = 00:03:32 . Memory (MB): peak = 218.805 ; gain = 164.688
+INFO: [HLS 200-0] Linking Release ...
+Execute         llvm-ld C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.bc -hls-opt -except-internalize HLS_accel -LC:/software/vivado_2017.4/Vivado/2017.4/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o 
+Command         llvm-ld returned 0; 0.427 sec.
+Execute         disassemble C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o 
+Execute           is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.bc 
+Command           is_encrypted returned 0; 0 sec.
+Command         disassemble returned 0; 0.395 sec.
+INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
+INFO: [HLS 200-0] Linking Debug ...
+Execute         llvm-ld C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/mmult_accel.g.bc -hls-opt -except-internalize HLS_accel -LC:/software/vivado_2017.4/Vivado/2017.4/win64/lib -lm_basic -lhlsmc++ -lhlsm -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g 
+Command         llvm-ld returned 0; 0.44 sec.
+INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:23 ; elapsed = 00:03:33 . Memory (MB): peak = 218.805 ; gain = 164.688
+Execute         ::config_rtl 
+Command         config_rtl returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 -enable_clang39=0 -VP9_rom_infer_simplify=0 
+Execute           cleanup_all_models 
+Command           cleanup_all_models returned 0; 0 sec.
+INFO: [HLS 200-10] Starting code transformations ...
+Execute           transform -promote-dbg-pointer C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.pp.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.pp.0.bc -f 
+Command           transform returned 0; 0.029 sec.
+Execute           llvm-ld C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.pp.0.bc -disable-opt -LC:/software/vivado_2017.4/Vivado/2017.4/win64/lib -lfloatconversion -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.0 
+Command           llvm-ld returned 0; 0.316 sec.
+INFO: [HLS 200-0] Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top HLS_accel -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.0.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'pop_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (./mmult.h:151).
+INFO: [XFORM 203-603] Inlining function 'pop_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (./mmult.h:141).
+INFO: [XFORM 203-603] Inlining function 'mmult_hw<float, 32>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (./mmult.h:155).
+INFO: [XFORM 203-603] Inlining function 'push_stream<float, 4, 5, 5>' into 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' (./mmult.h:163).
+INFO: [XFORM 203-603] Inlining function 'wrapped_mmult_hw<float, 32, 1024, 4, 5, 5>' into 'HLS_accel' (mmult_accel.cpp:36).
+Command           transform returned 0; 1.83 sec.
+Execute           disassemble C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1 C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1 
+Execute             is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1.bc 
+Command             is_encrypted returned 0; 0.001 sec.
+Command           disassemble returned 0; 0.395 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:24 ; elapsed = 00:03:36 . Memory (MB): peak = 218.805 ; gain = 164.688
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-0] Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.2.prechk.bc -f 
+Command           transform returned 0; 0.258 sec.
+INFO: [HLS 200-0] Checking Synthesizability 2/2..
+Execute           transform -syn-check C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.2.prechk.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command           transform returned 0; 0.027 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:25 ; elapsed = 00:03:36 . Memory (MB): peak = 218.805 ; gain = 164.688
+INFO: [HLS 200-0] Compiler optimizing ...
+INFO: [HLS 200-0] Share syncheck's 1.bc for syn flow: copy C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.g.1.bc to C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.1.bc
+INFO: [HLS 200-0] Presyn 1...
+Execute           transform -hls -tmp C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -simplifycfg -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.1.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'OUTPUT_STREAM.data.V' (mmult_accel.cpp:21).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'INPUT_STREAM.data.V' (mmult_accel.cpp:21).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'L2' (./mmult.h:55) in function 'HLS_accel' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'L3' (./mmult.h:59) in function 'HLS_accel' completely.
+Command           transform returned 0; 0.427 sec.
+INFO: [HLS 200-0] Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.1.tmp.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command           transform returned 0; 0.138 sec.
+Execute           disassemble C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.2 C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.2 
+Execute             is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.2.bc 
+Command             is_encrypted returned 0; 0.001 sec.
+Command           disassemble returned 0; 0.386 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:25 ; elapsed = 00:03:37 . Memory (MB): peak = 222.145 ; gain = 168.027
+INFO: [HLS 200-0] Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -interface-preproc -directive-preproc -interface-gen -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -read-loop-dep -dce -bitwidth -loop-dep -check-stream -norm-name -legalize -validate-dataflow -cdfg-build C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.2.bc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (./mmult.h:136:13) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (./mmult.h:146:14) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'L1' (./mmult.h:54:3) in function 'HLS_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-4' (./mmult.h:158:15) in function 'HLS_accel'.
+Command           transform returned 0; 0.806 sec.
+Execute           disassemble C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.3 C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.3 
+Execute             is_encrypted C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.o.3.bc 
+Command             is_encrypted returned 0; 0.001 sec.
+Command           disassemble returned 0; 0.372 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:03:38 . Memory (MB): peak = 223.680 ; gain = 169.563
+INFO: [HLS 200-0] Finish building internal data model.
+Command         opt_and_import_c returned 0; 5.13 sec.
+Command       elaborate returned 0; 17.598 sec.
+Execute       autosyn 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-0] Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'HLS_accel' ...
+Execute         ap_set_top_model HLS_accel 
+Command         ap_set_top_model returned 0; 0.001 sec.
+Execute         get_model_list HLS_accel -filter all-wo-channel -topdown 
+Command         get_model_list returned 0; 0 sec.
+Execute         preproc_iomode -model HLS_accel 
+Command         preproc_iomode returned 0; 0.001 sec.
+Execute         get_model_list HLS_accel -filter all-wo-channel 
+Command         get_model_list returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for configure: HLS_accel
+INFO: [HLS 200-0] Configuring Module : HLS_accel ...
+Execute         set_default_model HLS_accel 
+Command         set_default_model returned 0; 0.006 sec.
+Execute         apply_spec_resource_limit HLS_accel 
+Command         apply_spec_resource_limit returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for preprocess: HLS_accel
+INFO: [HLS 200-0] Preprocessing Module: HLS_accel ...
+Execute         set_default_model HLS_accel 
+Command         set_default_model returned 0; 0.005 sec.
+Execute         cdfg_preprocess -model HLS_accel 
+Command         cdfg_preprocess returned 0; 0.003 sec.
+Execute         rtl_gen_preprocess HLS_accel 
+Command         rtl_gen_preprocess returned 0; 0.001 sec.
+INFO: [HLS 200-0] Model list for synthesis: HLS_accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'HLS_accel'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model HLS_accel 
+Command         set_default_model returned 0; 0.005 sec.
+Execute         schedule -model HLS_accel 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'L1_L2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('a_load_2', ./mmult.h:59->./mmult.h:155->mmult_accel.cpp:36) on array 'a', ./mmult.h:129->mmult_accel.cpp:36 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule returned 0; 0.858 sec.
+INFO: [HLS 200-111]  Elapsed time: 153.815 seconds; current allocated memory: 157.536 MB.
+Execute         report -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.verbose.sched.rpt -verbose -f 
+Command         report returned 0; 0.491 sec.
+Execute         db_write -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.sched.adb -f 
+Command         db_write returned 0; 0.166 sec.
+INFO: [HLS 200-0] Finish scheduling HLS_accel.
+Execute         set_default_model HLS_accel 
+Command         set_default_model returned 0; 0.004 sec.
+Execute         bind -model HLS_accel 
+INFO: [BIND 205-110] clear=
+INFO: [BIND 205-110] debug=
+INFO: [BIND 205-110] drf=
+INFO: [BIND 205-110] effort=
+INFO: [BIND 205-110] fast_refine=
+INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] global_opt=
+INFO: [BIND 205-110] gsearch=
+INFO: [BIND 205-110] help=
+INFO: [BIND 205-110] help-hidden=
+INFO: [BIND 205-110] min_mem_port=
+INFO: [BIND 205-110] min_op=
+INFO: [BIND 205-110] minreg=
+INFO: [BIND 205-110] ml=
+INFO: [BIND 205-110] model=HLS_accel
+INFO: [BIND 205-110] no_false_path=
+INFO: [BIND 205-110] no_min_op=
+INFO: [BIND 205-110] normalize=
+INFO: [BIND 205-110] quiet=
+INFO: [BIND 205-110] refine=
+INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-110] search=
+INFO: [BIND 205-110] tight_delay=
+INFO: [BIND 205-110] verbose=
+INFO: [BIND 205-110] wFF=
+INFO: [BIND 205-110] wFU=
+INFO: [BIND 205-110] wMUX=
+INFO: [BIND 205-110] wNET=
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind returned 0; 0.225 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.939 seconds; current allocated memory: 159.801 MB.
+Execute         report -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.verbose.bind.rpt -verbose -f 
+Command         report returned 0; 0.43 sec.
+Execute         db_write -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.bind.adb -f 
+Command         db_write returned 0; 0.186 sec.
+INFO: [HLS 200-0] Finish binding HLS_accel.
+Execute         get_model_list HLS_accel -filter all-wo-channel 
+Command         get_model_list returned 0; 0 sec.
+INFO: [HLS 200-0] Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess HLS_accel 
+Command         rtl_gen_preprocess returned 0; 0.002 sec.
+INFO: [HLS 200-0] Model list for RTL generation: HLS_accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'HLS_accel'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         create_rtl_model HLS_accel -vendor xilinx -mg_file C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/INPUT_STREAM_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'HLS_accel/OUTPUT_STREAM_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'HLS_accel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CONTROL_BUS.
+INFO: [SYN 201-210] Renamed object name 'HLS_accel_fadd_32ns_32ns_32_5_full_dsp_1' to 'HLS_accel_fadd_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'HLS_accel_fmul_32ns_32ns_32_4_max_dsp_1' to 'HLS_accel_fmul_32cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'HLS_accel_fadd_32bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'HLS_accel_fmul_32cud': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'HLS_accel'.
+Command         create_rtl_model returned 0; 0.306 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.963 seconds; current allocated memory: 164.302 MB.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command         ap_source returned 0; 0.003 sec.
+Execute         gen_rtl HLS_accel -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/syn/systemc/HLS_accel -synmodules HLS_accel 
+Command         gen_rtl returned 0; 0.047 sec.
+Execute         gen_rtl HLS_accel -istop -style xilinx -f -lang vhdl -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/syn/vhdl/HLS_accel 
+Command         gen_rtl returned 0; 0.225 sec.
+Execute         gen_rtl HLS_accel -istop -style xilinx -f -lang vlog -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/syn/verilog/HLS_accel 
+Command         gen_rtl returned 0; 0.144 sec.
+Execute         export_constraint_db -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl -f -tool general 
+Command         export_constraint_db returned 0; 0 sec.
+Execute         report -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.design.xml -verbose -f -dv 
+Command         report returned 0; 0.212 sec.
+Execute         report -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.sdaccel.xml -verbose -f -sdaccel 
+Command         report returned 0; 0.376 sec.
+Execute         gen_tb_info HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel -p C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db 
+Command         gen_tb_info returned 0; 0.009 sec.
+Execute         report -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/syn/report/HLS_accel_csynth.rpt -f 
+Command         report returned 0; 0.138 sec.
+Execute         report -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/syn/report/HLS_accel_csynth.xml -f -x 
+Command         report returned 0; 0.106 sec.
+Execute         report -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.verbose.rpt -verbose -f 
+Command         report returned 0; 0.558 sec.
+Execute         db_write -model HLS_accel -o C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.adb -f 
+Command         db_write returned 0; 0.348 sec.
+Execute         sc_get_clocks HLS_accel 
+Command         sc_get_clocks returned 0; 0 sec.
+Execute         sc_get_portdomain HLS_accel 
+Command         sc_get_portdomain returned 0; 0 sec.
+INFO: [HLS 200-0] Model list for RTL component generation: HLS_accel
+INFO: [HLS 200-0] Handling components in module [HLS_accel] ... 
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+INFO: [HLS 200-0] Found component HLS_accel_fadd_32bkb.
+INFO: [HLS 200-0] Append model HLS_accel_fadd_32bkb
+INFO: [HLS 200-0] Found component HLS_accel_fmul_32cud.
+INFO: [HLS 200-0] Append model HLS_accel_fmul_32cud
+INFO: [HLS 200-0] Found component HLS_accel_a.
+INFO: [HLS 200-0] Append model HLS_accel_a
+INFO: [HLS 200-0] Found component HLS_accel_out.
+INFO: [HLS 200-0] Append model HLS_accel_out
+INFO: [HLS 200-0] Found component HLS_accel_CONTROL_BUS_s_axi.
+INFO: [HLS 200-0] Append model HLS_accel_CONTROL_BUS_s_axi
+Command         ap_source returned 0; 0.005 sec.
+INFO: [HLS 200-0] Append model HLS_accel
+INFO: [HLS 200-0] Generating RTL model list ...
+INFO: [HLS 200-0] All models in this session: HLS_accel_fadd_32bkb HLS_accel_fmul_32cud HLS_accel_a HLS_accel_out HLS_accel_CONTROL_BUS_s_axi HLS_accel
+INFO: [HLS 200-0] To file: write model HLS_accel_fadd_32bkb
+INFO: [HLS 200-0] To file: write model HLS_accel_fmul_32cud
+INFO: [HLS 200-0] To file: write model HLS_accel_a
+INFO: [HLS 200-0] To file: write model HLS_accel_out
+INFO: [HLS 200-0] To file: write model HLS_accel_CONTROL_BUS_s_axi
+INFO: [HLS 200-0] To file: write model HLS_accel
+INFO: [HLS 200-0] Finished generating RTL model list.
+
+
+INFO: [HLS 200-0] RTL Generation done.
+INFO: [HLS 200-0] CAS Generation done.
+INFO: [HLS 200-0] CBC Generation done.
+Execute         export_ssdm C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/a.export.ll 
+Command         export_ssdm returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command               ap_source returned 0; 0.002 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command                 ap_source returned 0; 0.004 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command                 ap_source returned 0; 0.007 sec.
+Command               ap_source returned 0; 0.011 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command               ap_source returned 0; 0.012 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command               ap_source returned 0; 0.008 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command               ap_source returned 0; 0.003 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command               ap_source returned 0; 0.099 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.14 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.142 sec.
+Command         ap_source returned 0; 0.143 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'HLS_accel_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'HLS_accel_out_ram (RAM)' using block RAMs.
+Execute           source ./CONTROL_BUS.slave.tcl 
+Command           ap_source returned 0; 0.002 sec.
+Command         ap_source returned 0; 0.205 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command         ap_source returned 0; 0 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command               ap_source returned 0; 0.001 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command               ap_source returned 0; 0.003 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command                 ap_source returned 0; 0.005 sec.
+Execute                 source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command                 ap_source returned 0; 0.008 sec.
+Command               ap_source returned 0; 0.013 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command               ap_source returned 0; 0.011 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command               ap_source returned 0; 0.008 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command               ap_source returned 0; 0 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command               ap_source returned 0; 0.1 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command               ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0.143 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.146 sec.
+Command         ap_source returned 0; 0.146 sec.
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command           ap_source returned 0; 0.003 sec.
+Command         ap_source returned 0; 0.003 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command         ap_source returned 0; 0.003 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command         ap_source returned 0; 0.058 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command         ap_source returned 0; 0.027 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command         ap_source returned 0; 0.003 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.005 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.003 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.001 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         sc_get_clocks HLS_accel 
+Command         sc_get_clocks returned 0; 0 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/impl/misc/HLS_accel_ap_fadd_3_full_dsp_32_ip.tcl 
+Command         ap_source returned 0; 0.002 sec.
+Execute         source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/impl/misc/HLS_accel_ap_fmul_2_max_dsp_32_ip.tcl 
+Command         ap_source returned 0; 0.001 sec.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:31 ; elapsed = 00:03:47 . Memory (MB): peak = 236.898 ; gain = 182.781
+INFO: [SYSC 207-301] Generating SystemC RTL for HLS_accel.
+INFO: [VHDL 208-304] Generating VHDL RTL for HLS_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for HLS_accel.
+Command       autosyn returned 0; 8.33 sec.
+Command     csynth_design returned 0; 25.929 sec.
+Execute     export_design -format ip_catalog 
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.009 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.095 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.14 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.143 sec.
+Command       ap_source returned 0; 0.143 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.007 sec.
+Command             ap_source returned 0; 0.011 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.009 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.094 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.137 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.139 sec.
+Command       ap_source returned 0; 0.139 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command       ap_source returned 0; 0.059 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command       ap_source returned 0; 0.025 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.006 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.rtl_wrap.cfg.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.029 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.007 sec.
+Command             ap_source returned 0; 0.011 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.011 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.101 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.146 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.148 sec.
+Command       ap_source returned 0; 0.148 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.003 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.007 sec.
+Command             ap_source returned 0; 0.011 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.008 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.092 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.133 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.136 sec.
+Command       ap_source returned 0; 0.136 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.009 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.005 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.098 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.141 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.144 sec.
+Command       ap_source returned 0; 0.145 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command       ap_source returned 0; 0.057 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.02 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.013 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.008 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.092 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.135 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.137 sec.
+Command       ap_source returned 0; 0.139 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.019 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.005 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.007 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.008 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.103 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.146 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.149 sec.
+Command       ap_source returned 0; 0.149 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.028 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.004 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.007 sec.
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.008 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.099 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.142 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.145 sec.
+Command       ap_source returned 0; 0.145 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.compgen.tcl 
+Command       ap_source returned 0; 0.066 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.constraint.tcl 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/HLS_accel.tbgen.tcl 
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/common.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/APCoreGen.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/op_simcore.gen 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/generic/autopilot/interface.gen 
+Command       ap_source returned 0; 0 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.003 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/plb46.gen 
+Command             ap_source returned 0; 0.002 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/fsl.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/axi4.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/saxilite.gen 
+Command               ap_source returned 0; 0.005 sec.
+Execute               source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/maxi.gen 
+Command               ap_source returned 0; 0.009 sec.
+Command             ap_source returned 0; 0.014 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source returned 0; 0.012 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command             ap_source returned 0; 0.007 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/dds_compiler.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/util.gen 
+Command             ap_source returned 0; 0.001 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source returned 0; 0.108 sec.
+Execute             source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0.153 sec.
+Execute           source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.155 sec.
+Command       ap_source returned 0; 0.155 sec.
+Execute       source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/software/vivado_2017.4/Vivado/2017.4/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command         ap_source returned 0; 0.002 sec.
+Command       ap_source returned 0; 0.002 sec.
+Execute       source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0/.autopilot/db/global.setting.tcl 
+Command       ap_source returned 0; 0.002 sec.
+Command     export_design returned 0; 51.159 sec.
+Execute     close_project 
+Command     close_project returned 0; 0 sec.
+Command   ap_source returned 0; 277.02 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/aes/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Command   ap_source returned 0; 0.003 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/blowfish/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/des/pkgIndex.tcl 
+Command   ap_source returned 0; 0.043 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Command   ap_source returned 0; 0.003 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/rc4/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Command   ap_source returned 0; 0.002 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 sec.
+Execute   source C:/software/vivado_2017.4/Vivado/2017.4/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Command   ap_source returned 0; 0.001 

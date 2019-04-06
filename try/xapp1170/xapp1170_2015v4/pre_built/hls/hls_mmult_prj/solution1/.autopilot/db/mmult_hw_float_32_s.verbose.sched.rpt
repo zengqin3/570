@@ -1,0 +1,295 @@
+
+
+================================================================
+== Vivado HLS Report for 'mmult_hw_float_32_s'
+================================================================
+* Date:           Fri Feb 22 16:21:21 2019
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        hls_mmult_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.26|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  362561|  362561|  362561|  362561|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+--------+--------+----------+-----------+-----------+------+----------+
+        |          |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+--------+--------+----------+-----------+-----------+------+----------+
+        |- L1      |  362560|  362560|     11330|          -|          -|    32|    no    |
+        | + L2     |   11328|   11328|       354|          -|          -|    32|    no    |
+        |  ++ L3   |     352|     352|        11|          -|          -|    32|    no    |
+        +----------+--------+--------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond2)
+3 --> 
+	4  / (!exitcond1)
+	2  / (exitcond1)
+4 --> 
+	5  / (!exitcond)
+	3  / (exitcond)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	4  / true
+
+* FSM state operations: 
+
+ <State 1> : 1.77ns
+ST_1 : Operation 15 [1/1] (1.76ns)   --->   "br label %1" [./mmult.h:53]
+
+ <State 2> : 1.83ns
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%ia = phi i6 [ 0, %0 ], [ %ia_1, %8 ]"
+ST_2 : Operation 17 [1/1] (1.42ns)   --->   "%exitcond2 = icmp eq i6 %ia, -32" [./mmult.h:53]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"
+ST_2 : Operation 19 [1/1] (1.82ns)   --->   "%ia_1 = add i6 %ia, 1" [./mmult.h:53]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %9, label %2" [./mmult.h:53]
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str8) nounwind" [./mmult.h:54]
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([3 x i8]* @p_str8)" [./mmult.h:54]
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = call i11 @_ssdm_op_BitConcatenate.i11.i6.i5(i6 %ia, i5 0)" [./mmult.h:53]
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_6_cast = zext i11 %tmp to i12" [./mmult.h:54]
+ST_2 : Operation 25 [1/1] (1.76ns)   --->   "br label %3" [./mmult.h:54]
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "ret void" [./mmult.h:63]
+
+ <State 3> : 1.98ns
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%ib = phi i6 [ 0, %2 ], [ %ib_1, %7 ]"
+ST_3 : Operation 28 [1/1] (1.42ns)   --->   "%exitcond1 = icmp eq i6 %ib, -32" [./mmult.h:54]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"
+ST_3 : Operation 30 [1/1] (1.82ns)   --->   "%ib_1 = add i6 %ib, 1" [./mmult.h:54]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %8, label %4" [./mmult.h:54]
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str9) nounwind" [./mmult.h:55]
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([3 x i8]* @p_str9)" [./mmult.h:55]
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_2_cast = zext i6 %ib to i12" [./mmult.h:60]
+ST_3 : Operation 35 [1/1] (1.97ns)   --->   "%tmp_7 = add i12 %tmp_6_cast, %tmp_2_cast" [./mmult.h:60]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_7_cast = zext i12 %tmp_7 to i64" [./mmult.h:60]
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%out_addr = getelementptr [1024 x float]* %out_r, i64 0, i64 %tmp_7_cast" [./mmult.h:60]
+ST_3 : Operation 38 [1/1] (1.76ns)   --->   "br label %5" [./mmult.h:58]
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([3 x i8]* @p_str8, i32 %tmp_1)" [./mmult.h:61]
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "br label %1" [./mmult.h:53]
+
+ <State 4> : 5.23ns
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%sum = phi float [ 0.000000e+00, %4 ], [ %sum_1, %6 ]"
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%id = phi i6 [ 0, %4 ], [ %id_1, %6 ]"
+ST_4 : Operation 43 [1/1] (1.42ns)   --->   "%exitcond = icmp eq i6 %id, -32" [./mmult.h:58]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"
+ST_4 : Operation 45 [1/1] (1.82ns)   --->   "%id_1 = add i6 %id, 1" [./mmult.h:58]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %7, label %6" [./mmult.h:58]
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_4_cast = zext i6 %id to i12" [./mmult.h:59]
+ST_4 : Operation 48 [1/1] (1.97ns)   --->   "%tmp_8 = add i12 %tmp_4_cast, %tmp_6_cast" [./mmult.h:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_8_cast = zext i12 %tmp_8 to i64" [./mmult.h:59]
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [1024 x float]* %a, i64 0, i64 %tmp_8_cast" [./mmult.h:59]
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_9 = call i11 @_ssdm_op_BitConcatenate.i11.i6.i5(i6 %id, i5 0)" [./mmult.h:58]
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_10_cast = zext i11 %tmp_9 to i12" [./mmult.h:59]
+ST_4 : Operation 53 [1/1] (1.97ns)   --->   "%tmp_s = add i12 %tmp_2_cast, %tmp_10_cast" [./mmult.h:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_11_cast = zext i12 %tmp_s to i64" [./mmult.h:59]
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [1024 x float]* %b, i64 0, i64 %tmp_11_cast" [./mmult.h:59]
+ST_4 : Operation 56 [2/2] (3.25ns)   --->   "%a_load = load float* %a_addr, align 4" [./mmult.h:59]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 57 [2/2] (3.25ns)   --->   "%b_load = load float* %b_addr, align 4" [./mmult.h:59]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 58 [1/1] (3.25ns)   --->   "store float %sum, float* %out_addr, align 4" [./mmult.h:60]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([3 x i8]* @p_str9, i32 %tmp_3)" [./mmult.h:61]
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "br label %3" [./mmult.h:54]
+
+ <State 5> : 3.25ns
+ST_5 : Operation 61 [1/2] (3.25ns)   --->   "%a_load = load float* %a_addr, align 4" [./mmult.h:59]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_5 : Operation 62 [1/2] (3.25ns)   --->   "%b_load = load float* %b_addr, align 4" [./mmult.h:59]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+ <State 6> : 5.70ns
+ST_6 : Operation 63 [4/4] (5.70ns)   --->   "%tmp_5 = fmul float %a_load, %b_load" [./mmult.h:59]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 7> : 5.70ns
+ST_7 : Operation 64 [3/4] (5.70ns)   --->   "%tmp_5 = fmul float %a_load, %b_load" [./mmult.h:59]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 8> : 5.70ns
+ST_8 : Operation 65 [2/4] (5.70ns)   --->   "%tmp_5 = fmul float %a_load, %b_load" [./mmult.h:59]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 9> : 5.70ns
+ST_9 : Operation 66 [1/4] (5.70ns)   --->   "%tmp_5 = fmul float %a_load, %b_load" [./mmult.h:59]   --->   Core 100 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+ <State 10> : 7.26ns
+ST_10 : Operation 67 [5/5] (7.25ns)   --->   "%sum_1 = fadd float %sum, %tmp_5" [./mmult.h:59]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 11> : 7.26ns
+ST_11 : Operation 68 [4/5] (7.25ns)   --->   "%sum_1 = fadd float %sum, %tmp_5" [./mmult.h:59]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 12> : 7.26ns
+ST_12 : Operation 69 [3/5] (7.25ns)   --->   "%sum_1 = fadd float %sum, %tmp_5" [./mmult.h:59]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 13> : 7.26ns
+ST_13 : Operation 70 [2/5] (7.25ns)   --->   "%sum_1 = fadd float %sum, %tmp_5" [./mmult.h:59]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+ <State 14> : 7.26ns
+ST_14 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str10) nounwind" [./mmult.h:59]
+ST_14 : Operation 72 [1/5] (7.25ns)   --->   "%sum_1 = fadd float %sum, %tmp_5" [./mmult.h:59]   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 73 [1/1] (0.00ns)   --->   "br label %5" [./mmult.h:58]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ia') with incoming values : ('ia', ./mmult.h:53) [6]  (1.77 ns)
+
+ <State 2>: 1.83ns
+The critical path consists of the following:
+	'phi' operation ('ia') with incoming values : ('ia', ./mmult.h:53) [6]  (0 ns)
+	'add' operation ('ia', ./mmult.h:53) [9]  (1.83 ns)
+
+ <State 3>: 1.98ns
+The critical path consists of the following:
+	'phi' operation ('ib') with incoming values : ('ib', ./mmult.h:54) [18]  (0 ns)
+	'add' operation ('tmp_7', ./mmult.h:60) [27]  (1.98 ns)
+
+ <State 4>: 5.23ns
+The critical path consists of the following:
+	'phi' operation ('id') with incoming values : ('id', ./mmult.h:58) [33]  (0 ns)
+	'add' operation ('tmp_8', ./mmult.h:59) [41]  (1.98 ns)
+	'getelementptr' operation ('a_addr', ./mmult.h:59) [43]  (0 ns)
+	'load' operation ('a_load', ./mmult.h:59) on array 'a' [49]  (3.25 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('a_load', ./mmult.h:59) on array 'a' [49]  (3.25 ns)
+
+ <State 6>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_5', ./mmult.h:59) [51]  (5.7 ns)
+
+ <State 7>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_5', ./mmult.h:59) [51]  (5.7 ns)
+
+ <State 8>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_5', ./mmult.h:59) [51]  (5.7 ns)
+
+ <State 9>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_5', ./mmult.h:59) [51]  (5.7 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ./mmult.h:59) [52]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ./mmult.h:59) [52]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ./mmult.h:59) [52]  (7.26 ns)
+
+ <State 13>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ./mmult.h:59) [52]  (7.26 ns)
+
+ <State 14>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', ./mmult.h:59) [52]  (7.26 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

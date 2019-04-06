@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[COSIM 212-47]" severity="INFO" keynum="COSIM_TCL_47_1115" content="Using XSIM for RTL simulation." tag=""/>
+	<Message prefix="[COSIM 212-14]" severity="INFO" keynum="COSIM_TCL_14_1084" content="Instrumenting C test bench ..." tag=""/>
+	<Message prefix="[COSIM 212-302]" severity="INFO" keynum="COSIM_TCL_302_1177" content="Starting C TB testing ... " tag=""/>
+	<Message prefix="[COSIM 212-333]" severity="INFO" keynum="COSIM_TCL_333_1204" content="Generating C post check test bench ..." tag=""/>
+	<Message prefix="[COSIM 212-12]" severity="INFO" keynum="COSIM_TCL_12_1082" content="Generating RTL test bench ..." tag=""/>
+	<Message prefix="[COSIM 212-323]" severity="INFO" keynum="COSIM_TCL_323_1195" content="Starting verilog simulation. " tag=""/>
+	<Message prefix="[COSIM 212-15]" severity="INFO" keynum="COSIM_TCL_15_1085" content="Starting XSIM ..." tag=""/>
+	<Message prefix="[COSIM 212-316]" severity="INFO" keynum="COSIM_TCL_316_1188" content="Starting C post checking ..." tag=""/>
+	<Message prefix="[COSIM 212-1000]" severity="INFO" keynum="COSIM_TCL_1000_1070" content="*** C/RTL co-simulation finished: PASS ***" tag=""/>
+	<Message prefix="[COSIM 212-211]" severity="INFO" keynum="COSIM_TCL_211_1174" content="II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1303" content="Opening project &apos;C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj&apos;." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1358" content="Adding design file &apos;mmult_accel.cpp&apos; to the project" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1358" content="Adding test bench file &apos;mmult_test.cpp&apos; to the project" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1369" content="Opening solution &apos;C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_wrapped_mmult_prj/solution0&apos;." tag=""/>
+	<Message prefix="[SYN 201-201]" severity="INFO" keynum="23" content="Setting up clock &apos;default&apos; with a period of 10ns." tag=""/>
+</Messages>

@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 22 16:23:50 2019
+# Process ID: 29096
+# Current directory: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/standalone_mmult/xsim_script.tcl}
+# Log file: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog/xsim.log
+# Journal file: C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/standalone_mmult/xsim_script.tcl
+# xsim {standalone_mmult} -autoloadwcfg -tclbatch {standalone_mmult.tcl}
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source standalone_mmult.tcl
+## run all
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U32/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U31/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U30/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U29/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U28/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U27/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U26/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U25/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U24/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U23/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U22/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U21/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U20/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U19/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U18/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U17/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U16/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U15/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U14/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U13/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U12/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U11/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U10/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U9/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U8/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U7/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U6/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U5/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U4/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U3/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_standalone_mmult_top/AESL_inst_standalone_mmult/grp_mmult_hw_float_32_s_fu_74/standalone_mmult_bkb_U2/standalone_mmult_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\software\vivado_2017.4\Vivado\2017.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "12065000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 12105 ns : File "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/hls/hls_mmult_prj/solution3/sim/verilog/standalone_mmult.autotb.v" Line 2137
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 223.547 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Feb 22 16:24:14 2019...

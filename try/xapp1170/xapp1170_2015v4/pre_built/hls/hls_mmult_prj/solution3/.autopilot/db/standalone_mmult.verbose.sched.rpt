@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vivado HLS Report for 'standalone_mmult'
+================================================================
+* Date:           Fri Feb 22 16:22:02 2019
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        hls_mmult_prj
+* Solution:       solution3
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.26|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  1192|  1192|  1192|  1192|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+ <State 1> : 0.00ns
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "call fastcc void @"mmult_hw<float, 32>"([64 x float]* %A_0, [64 x float]* %A_1, [64 x float]* %A_2, [64 x float]* %A_3, [64 x float]* %A_4, [64 x float]* %A_5, [64 x float]* %A_6, [64 x float]* %A_7, [64 x float]* %A_8, [64 x float]* %A_9, [64 x float]* %A_10, [64 x float]* %A_11, [64 x float]* %A_12, [64 x float]* %A_13, [64 x float]* %A_14, [64 x float]* %A_15, [64 x float]* %B_0, [64 x float]* %B_1, [64 x float]* %B_2, [64 x float]* %B_3, [64 x float]* %B_4, [64 x float]* %B_5, [64 x float]* %B_6, [64 x float]* %B_7, [64 x float]* %B_8, [64 x float]* %B_9, [64 x float]* %B_10, [64 x float]* %B_11, [64 x float]* %B_12, [64 x float]* %B_13, [64 x float]* %B_14, [64 x float]* %B_15, [1024 x float]* %C)" [mmult_accel.cpp:14]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 2> : 0.00ns
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_15), !map !55"
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_14), !map !62"
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_13), !map !68"
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_12), !map !74"
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_11), !map !80"
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_10), !map !86"
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_9), !map !92"
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_8), !map !98"
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_7), !map !104"
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_6), !map !110"
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_5), !map !116"
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_4), !map !122"
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_3), !map !128"
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_2), !map !134"
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_1), !map !140"
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %A_0), !map !146"
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_15), !map !152"
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_14), !map !157"
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_13), !map !162"
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_12), !map !167"
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_11), !map !172"
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_10), !map !177"
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_9), !map !182"
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_8), !map !187"
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_7), !map !192"
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_6), !map !197"
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_5), !map !202"
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_4), !map !207"
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_3), !map !212"
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_2), !map !217"
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_1), !map !222"
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %B_0), !map !227"
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %C), !map !232"
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @standalone_mmult_str) nounwind"
+ST_2 : Operation 38 [1/2] (0.00ns)   --->   "call fastcc void @"mmult_hw<float, 32>"([64 x float]* %A_0, [64 x float]* %A_1, [64 x float]* %A_2, [64 x float]* %A_3, [64 x float]* %A_4, [64 x float]* %A_5, [64 x float]* %A_6, [64 x float]* %A_7, [64 x float]* %A_8, [64 x float]* %A_9, [64 x float]* %A_10, [64 x float]* %A_11, [64 x float]* %A_12, [64 x float]* %A_13, [64 x float]* %A_14, [64 x float]* %A_15, [64 x float]* %B_0, [64 x float]* %B_1, [64 x float]* %B_2, [64 x float]* %B_3, [64 x float]* %B_4, [64 x float]* %B_5, [64 x float]* %B_6, [64 x float]* %B_7, [64 x float]* %B_8, [64 x float]* %B_9, [64 x float]* %B_10, [64 x float]* %B_11, [64 x float]* %B_12, [64 x float]* %B_13, [64 x float]* %B_14, [64 x float]* %B_15, [1024 x float]* %C)" [mmult_accel.cpp:14]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [mmult_accel.cpp:16]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

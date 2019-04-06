@@ -1,0 +1,182 @@
+<stg><name>standalone_mmult</name>
+
+
+<trans_list>
+
+<trans id="10" from="1" to="2">
+<condition id="2">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+:4  call fastcc void @"mmult_hw<float, 32>"([1024 x float]* %A, [1024 x float]* %B, [1024 x float]* %C) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+:0  call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %A) nounwind, !map !55
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+:1  call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %B) nounwind, !map !61
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="32">
+<![CDATA[
+:2  call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %C) nounwind, !map !65
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+:3  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @standalone_mmult_str) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+:4  call fastcc void @"mmult_hw<float, 32>"([1024 x float]* %A, [1024 x float]* %B, [1024 x float]* %C) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0">
+<![CDATA[
+:5  ret void
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="11" name="A" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="A"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="12" name="B" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="B"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="13" name="C" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="C"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="15" from="mmult_hw<float, 32>" to="StgValue_3" fromId="14" toId="3">
+</dataflow>
+<dataflow id="16" from="A" to="StgValue_3" fromId="11" toId="3">
+</dataflow>
+<dataflow id="17" from="B" to="StgValue_3" fromId="12" toId="3">
+</dataflow>
+<dataflow id="18" from="C" to="StgValue_3" fromId="13" toId="3">
+</dataflow>
+<dataflow id="20" from="_ssdm_op_SpecBitsMap" to="StgValue_4" fromId="19" toId="4">
+</dataflow>
+<dataflow id="21" from="A" to="StgValue_4" fromId="11" toId="4">
+</dataflow>
+<dataflow id="22" from="_ssdm_op_SpecBitsMap" to="StgValue_5" fromId="19" toId="5">
+</dataflow>
+<dataflow id="23" from="B" to="StgValue_5" fromId="12" toId="5">
+</dataflow>
+<dataflow id="24" from="_ssdm_op_SpecBitsMap" to="StgValue_6" fromId="19" toId="6">
+</dataflow>
+<dataflow id="25" from="C" to="StgValue_6" fromId="13" toId="6">
+</dataflow>
+<dataflow id="27" from="_ssdm_op_SpecTopModule" to="StgValue_7" fromId="26" toId="7">
+</dataflow>
+<dataflow id="29" from="standalone_mmult_str" to="StgValue_7" fromId="28" toId="7">
+</dataflow>
+<dataflow id="30" from="mmult_hw<float, 32>" to="StgValue_8" fromId="14" toId="8">
+</dataflow>
+<dataflow id="31" from="A" to="StgValue_8" fromId="11" toId="8">
+</dataflow>
+<dataflow id="32" from="B" to="StgValue_8" fromId="12" toId="8">
+</dataflow>
+<dataflow id="33" from="C" to="StgValue_8" fromId="13" toId="8">
+</dataflow>
+</dataflows>
+
+
+</stg>

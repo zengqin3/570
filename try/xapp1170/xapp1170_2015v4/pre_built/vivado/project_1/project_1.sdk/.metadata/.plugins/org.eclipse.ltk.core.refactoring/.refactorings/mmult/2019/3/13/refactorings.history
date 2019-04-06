@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;mmult/src/main.c&apos; to &apos;acc_base.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="acc_base.c" stamp="1553567570695" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;mmult/src/share_data&apos; to &apos;share_data.h&apos;" description="Rename resource &apos;share_data&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/share_data" name="share_data.h" stamp="1553637403576" updateReferences="true"/>
+</session>

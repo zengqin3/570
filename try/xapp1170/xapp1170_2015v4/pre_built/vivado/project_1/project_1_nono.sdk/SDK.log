@@ -1,0 +1,390 @@
+16:47:48 INFO  : Registering command handlers for SDK TCF services
+16:47:49 INFO  : Launching XSCT server: xsct.bat -interactive C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+16:47:52 INFO  : XSCT server has started successfully.
+16:47:53 INFO  : Successfully done setting XSCT server connection channel  
+16:47:53 INFO  : Successfully done setting SDK workspace  
+16:47:53 INFO  : Processing command line option -hwspec C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper.hdf.
+17:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:14:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:14:59 INFO  : FPGA configured successfully with bitstream "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:21:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:21:11 INFO  : 'fpga -state' command is executed.
+17:21:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:21:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:21:11 INFO  : 'jtag frequency' command is executed.
+17:21:11 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:21:11 INFO  : Context for 'APU' is selected.
+17:21:11 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:21:11 INFO  : 'configparams force-mem-access 1' command is executed.
+17:21:12 INFO  : Context for 'APU' is selected.
+17:21:12 INFO  : 'stop' command is executed.
+17:21:12 INFO  : 'ps7_init' command is executed.
+17:21:12 INFO  : 'ps7_post_config' command is executed.
+17:21:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:21:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:12 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:21:12 INFO  : 'configparams force-mem-access 0' command is executed.
+17:21:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:21:12 INFO  : Memory regions updated for context APU
+17:21:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:21:12 INFO  : 'con' command is executed.
+17:21:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+17:21:12 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+17:22:29 INFO  : Disconnected from the channel tcfchan#1.
+17:22:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:22:30 INFO  : 'fpga -state' command is executed.
+17:22:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:22:30 INFO  : 'jtag frequency' command is executed.
+17:22:30 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:22:30 INFO  : Context for 'APU' is selected.
+17:22:32 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:22:32 INFO  : 'configparams force-mem-access 1' command is executed.
+17:22:32 INFO  : Context for 'APU' is selected.
+17:22:32 INFO  : 'stop' command is executed.
+17:22:33 INFO  : 'ps7_init' command is executed.
+17:22:33 INFO  : 'ps7_post_config' command is executed.
+17:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:34 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:22:34 INFO  : 'configparams force-mem-access 0' command is executed.
+17:22:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:22:34 INFO  : Memory regions updated for context APU
+17:22:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:22:34 INFO  : 'con' command is executed.
+17:22:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+17:22:34 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+17:24:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:24:15 INFO  : FPGA configured successfully with bitstream "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:24:48 INFO  : Disconnected from the channel tcfchan#2.
+17:24:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:24:50 INFO  : 'fpga -state' command is executed.
+17:24:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:24:50 INFO  : 'jtag frequency' command is executed.
+17:24:50 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:24:50 INFO  : Context for 'APU' is selected.
+17:24:52 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:24:52 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:52 INFO  : Context for 'APU' is selected.
+17:24:52 INFO  : 'stop' command is executed.
+17:24:52 INFO  : 'ps7_init' command is executed.
+17:24:52 INFO  : 'ps7_post_config' command is executed.
+17:24:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:24:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:53 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:53 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:53 INFO  : Memory regions updated for context APU
+17:24:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:54 INFO  : 'con' command is executed.
+17:24:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+17:24:54 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+17:29:17 INFO  : Disconnected from the channel tcfchan#3.
+17:29:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:29:18 INFO  : 'jtag frequency' command is executed.
+17:29:18 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:29:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:29:20 INFO  : FPGA configured successfully with bitstream "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:29:20 INFO  : Context for 'APU' is selected.
+17:29:21 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:29:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:21 INFO  : Context for 'APU' is selected.
+17:29:21 INFO  : 'stop' command is executed.
+17:29:22 INFO  : 'ps7_init' command is executed.
+17:29:22 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1
+fpga -file C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:22 INFO  : Memory regions updated for context APU
+17:29:22 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+17:30:56 INFO  : Disconnected from the channel tcfchan#4.
+17:30:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:30:58 INFO  : 'fpga -state' command is executed.
+17:30:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:30:58 INFO  : 'jtag frequency' command is executed.
+17:30:58 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:30:58 INFO  : Context for 'APU' is selected.
+17:31:00 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:31:00 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:00 INFO  : Context for 'APU' is selected.
+17:31:00 INFO  : 'stop' command is executed.
+17:31:00 INFO  : 'ps7_init' command is executed.
+17:31:00 INFO  : 'ps7_post_config' command is executed.
+17:31:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:31:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:01 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:31:01 INFO  : 'configparams force-mem-access 0' command is executed.
+17:31:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:31:01 INFO  : Memory regions updated for context APU
+17:31:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:31:02 INFO  : 'con' command is executed.
+17:31:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+17:31:02 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+17:42:03 WARN  : Given IPC port value is invalid. Using default port 2350
+17:42:03 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+17:42:07 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:24 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:24 INFO  : Disconnected from the channel tcfchan#5.
+17:42:27 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:28 INFO  : ps7_init is completed.
+17:42:28 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 INFO  : ps7_post_config is completed.
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:42:29 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:46:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:46:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:46:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+17:49:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:49:22 INFO  : FPGA configured successfully with bitstream "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:50:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+17:50:09 INFO  : 'fpga -state' command is executed.
+17:50:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+17:50:10 INFO  : 'jtag frequency' command is executed.
+17:50:10 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:50:10 INFO  : Context for 'APU' is selected.
+17:50:10 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:50:10 INFO  : 'configparams force-mem-access 1' command is executed.
+17:50:10 INFO  : Context for 'APU' is selected.
+17:50:10 INFO  : 'stop' command is executed.
+17:50:10 INFO  : 'ps7_init' command is executed.
+17:50:10 INFO  : 'ps7_post_config' command is executed.
+17:50:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:50:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:50:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:50:10 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:50:10 INFO  : 'configparams force-mem-access 0' command is executed.
+17:50:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:50:10 INFO  : Memory regions updated for context APU
+17:50:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:50:11 INFO  : 'con' command is executed.
+17:50:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+17:50:11 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+18:30:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+18:30:41 INFO  : FPGA configured successfully with bitstream "C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+18:30:59 INFO  : Disconnected from the channel tcfchan#6.
+18:31:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+18:31:00 INFO  : 'fpga -state' command is executed.
+18:31:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+18:31:00 INFO  : 'jtag frequency' command is executed.
+18:31:00 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:31:00 INFO  : Context for 'APU' is selected.
+18:31:02 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:31:02 INFO  : 'configparams force-mem-access 1' command is executed.
+18:31:02 INFO  : Context for 'APU' is selected.
+18:31:02 INFO  : 'stop' command is executed.
+18:31:03 INFO  : 'ps7_init' command is executed.
+18:31:03 INFO  : 'ps7_post_config' command is executed.
+18:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:03 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Release/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:31:03 INFO  : 'configparams force-mem-access 0' command is executed.
+18:31:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Release/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:31:03 INFO  : Memory regions updated for context APU
+18:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:03 INFO  : 'con' command is executed.
+18:31:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+18:31:03 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mmult.elf_on_local.tcl'
+18:31:29 INFO  : Disconnected from the channel tcfchan#7.
+18:31:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A" && level==0} -index 1' command is executed.
+18:31:30 INFO  : 'fpga -state' command is executed.
+18:31:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6B098A' is selected.
+18:31:31 INFO  : 'jtag frequency' command is executed.
+18:31:31 INFO  : Sourcing of 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:31:31 INFO  : Context for 'APU' is selected.
+18:31:32 INFO  : Hardware design information is loaded from 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:31:32 INFO  : 'configparams force-mem-access 1' command is executed.
+18:31:32 INFO  : Context for 'APU' is selected.
+18:31:45 INFO  : 'stop' command is executed.
+18:31:45 INFO  : 'ps7_init' command is executed.
+18:31:45 INFO  : 'ps7_post_config' command is executed.
+18:31:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:46 INFO  : The application 'C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:31:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:31:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+loadhw -hw C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+dow C:/Umich/2nd_term/570/final_project/try/xapp1170/xapp1170_2015v4/pre_built/vivado/project_1/project_1.sdk/mmult/Debug/mmult.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:31:46 INFO  : Memory regions updated for context APU
+18:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:46 INFO  : 'con' command is executed.
+18:31:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6B098A"} -index 0
+con
+----------------End of Script----------------
+
+18:31:46 INFO  : Launch script is exported to file 'C:\Umich\2nd_term\570\final_project\try\xapp1170\xapp1170_2015v4\pre_built\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mmult.elf_on_local.tcl'
+18:35:59 INFO  : Disconnected from the channel tcfchan#8.
+18:36:04 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
